@@ -140,15 +140,57 @@ const CityCard: React.FC<CityCardProps> = ({ city, onClick }) => {
                   {((city.populationGrowth || 0) * 100).toFixed(1)}%
                 </p>
               </div>
-              <div className="bg-gray-50 dark:bg-gray-700 p-3 rounded-lg">
-                <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Urban Area</h4>
-                <p className="text-lg font-bold text-green-600 dark:text-green-400">
-                  {city.urbanArea || 'N/A'}
-                </p>
-              </div>
             </div>
           </div>
         )}
+
+        {/* City Specialties Section */}
+        <div className="mt-4 space-y-3">
+          {/* Cuisine */}
+          <div>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Cuisine</p>
+            <div className="flex flex-wrap gap-1 mt-1">
+              {city.cuisine?.map((item, index) => (
+                <span key={index} className="px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full">
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+          {/* Languages */}
+          <div>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Languages</p>
+            <div className="flex flex-wrap gap-1 mt-1">
+              {city.languages?.map((lang, index) => (
+                <span key={index} className="px-2 py-1 text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-100 rounded-full">
+                  {lang}
+                </span>
+              ))}
+            </div>
+          </div>
+          {/* Traditional Attire */}
+          <div>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Traditional Attire</p>
+            <div className="flex flex-wrap gap-1 mt-1">
+              {city.traditionalAttire?.map((attire, index) => (
+                <span key={index} className="px-2 py-1 text-xs bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-100 rounded-full">
+                  {attire}
+                </span>
+              ))}
+            </div>
+          </div>
+          {/* Famous Personalities */}
+          <div>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Famous Personalities</p>
+            <div className="flex flex-wrap gap-1 mt-1">
+              {city.famousPersonalities?.map((person, index) => (
+                <span key={index} className="px-2 py-1 text-xs bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-100 rounded-full">
+                  {person}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

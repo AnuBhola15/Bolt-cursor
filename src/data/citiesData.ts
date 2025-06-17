@@ -11,6 +11,10 @@ export interface City {
   establishedYear: number;
   region: string;
   populationGrowth?: number; // Annual population growth rate as a decimal
+  cuisine: string[];
+  languages: string[];
+  traditionalAttire: string[];
+  famousPersonalities: string[];
 }
 
 export const citiesData: City[] = [
@@ -26,7 +30,11 @@ export const citiesData: City[] = [
     populationDensity: 20634,
     establishedYear: 1507,
     region: "Western India",
-    populationGrowth: 0.021 // 2.1% annual growth
+    populationGrowth: 0.021, // 2.1% annual growth
+    cuisine: ["Maharashtrian", "Mumbai Style"],
+    languages: ["Marathi", "English"],
+    traditionalAttire: ["Kurta-Pajama", "Saree"],
+    famousPersonalities: ["Mahatma Gandhi", "Raj Kapoor"]
   },
   {
     id: 2,
@@ -40,7 +48,11 @@ export const citiesData: City[] = [
     populationDensity: 7436,
     establishedYear: 1911,
     region: "Northern India",
-    populationGrowth: 0.023 // 2.3% annual growth
+    populationGrowth: 0.023, // 2.3% annual growth
+    cuisine: ["Delhi", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Indira Gandhi", "Amitabh Bachchan"]
   },
   {
     id: 3,
@@ -54,7 +66,11 @@ export const citiesData: City[] = [
     populationDensity: 11391,
     establishedYear: 1537,
     region: "Southern India",
-    populationGrowth: 0.028 // 2.8% annual growth
+    populationGrowth: 0.028, // 2.8% annual growth
+    cuisine: ["South Indian", "Bengali"],
+    languages: ["Kannada", "English"],
+    traditionalAttire: ["Dhoti", "Saree"],
+    famousPersonalities: ["M.S. Subbulakshmi", "R.K. Narayan"]
   },
   {
     id: 4,
@@ -68,7 +84,11 @@ export const citiesData: City[] = [
     populationDensity: 2384,
     establishedYear: 1690,
     region: "Eastern India",
-    populationGrowth: 0.015 // 1.5% annual growth
+    populationGrowth: 0.015, // 1.5% annual growth
+    cuisine: ["Bengali", "Indian"],
+    languages: ["Bengali", "English"],
+    traditionalAttire: ["Saree", "Dhoti"],
+    famousPersonalities: ["Rabindranath Tagore", "Subhas Chandra Bose"]
   },
   {
     id: 5,
@@ -82,7 +102,11 @@ export const citiesData: City[] = [
     populationDensity: 10987,
     establishedYear: 1639,
     region: "Southern India",
-    populationGrowth: 0.019 // 1.9% annual growth
+    populationGrowth: 0.019, // 1.9% annual growth
+    cuisine: ["South Indian", "Tamil"],
+    languages: ["Tamil", "English"],
+    traditionalAttire: ["Saree", "Dhoti"],
+    famousPersonalities: ["M.G. Ramachandran", "J. Jayalalithaa"]
   },
   {
     id: 6,
@@ -96,7 +120,11 @@ export const citiesData: City[] = [
     populationDensity: 6064,
     establishedYear: 1591,
     region: "Southern India",
-    populationGrowth: 0.024 // 2.4% annual growth
+    populationGrowth: 0.024, // 2.4% annual growth
+    cuisine: ["Hyderabadi", "South Indian"],
+    languages: ["Telugu", "English"],
+    traditionalAttire: ["Peshwai", "Saree"],
+    famousPersonalities: ["N.T. Rama Rao", "M.F. Husain"]
   },
   {
     id: 7,
@@ -110,7 +138,11 @@ export const citiesData: City[] = [
     populationDensity: 9429,
     establishedYear: 1818,
     region: "Western India",
-    populationGrowth: 0.026 // 2.6% annual growth
+    populationGrowth: 0.026, // 2.6% annual growth
+    cuisine: ["Maharashtrian", "Punjabi"],
+    languages: ["Marathi", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Bal Gangadhar Tilak", "Shivaji Maharaj"]
   },
   {
     id: 8,
@@ -124,7 +156,11 @@ export const citiesData: City[] = [
     populationDensity: 11158,
     establishedYear: 1411,
     region: "Western India",
-    populationGrowth: 0.022 // 2.2% annual growth
+    populationGrowth: 0.022, // 2.2% annual growth
+    cuisine: ["Gujarati", "North Indian"],
+    languages: ["Gujarati", "Hindi"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Vallabhbhai Patel", "Mahatma Gandhi"]
   },
   {
     id: 9,
@@ -138,7 +174,11 @@ export const citiesData: City[] = [
     populationDensity: 13681,
     establishedYear: 1520,
     region: "Western India",
-    populationGrowth: 0.027 // 2.7% annual growth
+    populationGrowth: 0.027, // 2.7% annual growth
+    cuisine: ["Gujarati", "North Indian"],
+    languages: ["Gujarati", "Hindi"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Sardar Vallabhbhai Patel", "J.R.D. Tata"]
   },
   {
     id: 10,
@@ -152,7 +192,11 @@ export const citiesData: City[] = [
     populationDensity: 6522,
     establishedYear: 1727,
     region: "Northern India",
-    populationGrowth: 0.020 // 2.0% annual growth
+    populationGrowth: 0.020, // 2.0% annual growth
+    cuisine: ["Rajasthani", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Maharaja Sawai Man Singh II", "Rajmata Gayatri Devi"]
   },
   {
     id: 11,
@@ -165,7 +209,11 @@ export const citiesData: City[] = [
     literacyRate: 97.36,
     populationDensity: 7139,
     establishedYear: 1341,
-    region: "Southern India"
+    region: "Southern India",
+    cuisine: ["Malabar", "South Indian"],
+    languages: ["Malayalam", "English"],
+    traditionalAttire: ["Dhoti", "Saree"],
+    famousPersonalities: ["M.F. Hussain", "Sachin Pilot"]
   },
   {
     id: 12,
@@ -178,7 +226,11 @@ export const citiesData: City[] = [
     literacyRate: 77.29,
     populationDensity: 4462,
     establishedYear: 1350,
-    region: "Northern India"
+    region: "Northern India",
+    cuisine: ["Awadhi", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Khalil-ur-Rahman", "A.R. Rahman"]
   },
   {
     id: 13,
@@ -191,7 +243,11 @@ export const citiesData: City[] = [
     literacyRate: 91.92,
     populationDensity: 10581,
     establishedYear: 1703,
-    region: "Central India"
+    region: "Central India",
+    cuisine: ["Maharashtrian", "North Indian"],
+    languages: ["Marathi", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Bal Gangadhar Tilak", "Shivaji Maharaj"]
   },
   {
     id: 14,
@@ -204,7 +260,11 @@ export const citiesData: City[] = [
     literacyRate: 87.38,
     populationDensity: 3700,
     establishedYear: 1715,
-    region: "Central India"
+    region: "Central India",
+    cuisine: ["Madhya Pradesh", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Bal Gangadhar Tilak", "Shivaji Maharaj"]
   },
   {
     id: 15,
@@ -217,7 +277,11 @@ export const citiesData: City[] = [
     literacyRate: 73.17,
     populationDensity: 6737,
     establishedYear: 490,
-    region: "Eastern India"
+    region: "Eastern India",
+    cuisine: ["Bihari", "North Indian"],
+    languages: ["Bhojpuri", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Bhagat Singh", "Sarojini Naidu"]
   },
   {
     id: 16,
@@ -230,7 +294,11 @@ export const citiesData: City[] = [
     literacyRate: 80.37,
     populationDensity: 6289,
     establishedYear: 1723,
-    region: "Central India"
+    region: "Central India",
+    cuisine: ["Madhya Pradesh", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Bhagat Singh", "Sarojini Naidu"]
   },
   {
     id: 17,
@@ -243,7 +311,11 @@ export const citiesData: City[] = [
     literacyRate: 91.36,
     populationDensity: 12527,
     establishedYear: 1853,
-    region: "Western India"
+    region: "Western India",
+    cuisine: ["Maharashtrian", "North Indian"],
+    languages: ["Marathi", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Bal Gangadhar Tilak", "Shivaji Maharaj"]
   },
   {
     id: 18,
@@ -256,7 +328,11 @@ export const citiesData: City[] = [
     literacyRate: 73.11,
     populationDensity: 8419,
     establishedYear: 1504,
-    region: "Northern India"
+    region: "Northern India",
+    cuisine: ["Awadhi", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 19,
@@ -269,7 +345,11 @@ export const citiesData: City[] = [
     literacyRate: 77.05,
     populationDensity: 10706,
     establishedYear: 1200,
-    region: "Northern India"
+    region: "Northern India",
+    cuisine: ["Awadhi", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 20,
@@ -282,7 +362,11 @@ export const citiesData: City[] = [
     literacyRate: 83.78,
     populationDensity: 4167,
     establishedYear: 1907,
-    region: "Western India"
+    region: "Western India",
+    cuisine: ["Gujarati", "North Indian"],
+    languages: ["Gujarati", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 21,
@@ -295,7 +379,11 @@ export const citiesData: City[] = [
     literacyRate: 79.85,
     populationDensity: 9100,
     establishedYear: 1740,
-    region: "Northern India"
+    region: "Northern India",
+    cuisine: ["Awadhi", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 22,
@@ -308,7 +396,11 @@ export const citiesData: City[] = [
     literacyRate: 82.50,
     populationDensity: 5206,
     establishedYear: 1480,
-    region: "Northern India"
+    region: "Northern India",
+    cuisine: ["Punjabi", "North Indian"],
+    languages: ["Punjabi", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 23,
@@ -321,7 +413,11 @@ export const citiesData: City[] = [
     literacyRate: 79.65,
     populationDensity: 2661,
     establishedYear: 1207,
-    region: "Northern India"
+    region: "Northern India",
+    cuisine: ["Awadhi", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 24,
@@ -334,7 +430,11 @@ export const citiesData: City[] = [
     literacyRate: 89.23,
     populationDensity: 4303,
     establishedYear: 985,
-    region: "Southern India"
+    region: "Southern India",
+    cuisine: ["South Indian", "Tamil"],
+    languages: ["Tamil", "English"],
+    traditionalAttire: ["Saree", "Dhoti"],
+    famousPersonalities: ["M.G. Ramachandran", "J. Jayalalithaa"]
   },
   {
     id: 25,
@@ -347,7 +447,11 @@ export const citiesData: City[] = [
     literacyRate: 81.79,
     populationDensity: 2538,
     establishedYear: 1682,
-    region: "Southern India"
+    region: "Southern India",
+    cuisine: ["Andhra Pradesh", "South Indian"],
+    languages: ["Telugu", "English"],
+    traditionalAttire: ["Dhoti", "Saree"],
+    famousPersonalities: ["N.T. Rama Rao", "M.F. Husain"]
   },
   {
     id: 26,
@@ -360,7 +464,11 @@ export const citiesData: City[] = [
     literacyRate: 89.85,
     populationDensity: 5622,
     establishedYear: 1818,
-    region: "Western India"
+    region: "Western India",
+    cuisine: ["Maharashtrian", "North Indian"],
+    languages: ["Marathi", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Bal Gangadhar Tilak", "Shivaji Maharaj"]
   },
   {
     id: 27,
@@ -373,7 +481,11 @@ export const citiesData: City[] = [
     literacyRate: 81.70,
     populationDensity: 7142,
     establishedYear: 1607,
-    region: "Northern India"
+    region: "Northern India",
+    cuisine: ["Haryanvi", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 28,
@@ -386,7 +498,11 @@ export const citiesData: City[] = [
     literacyRate: 70.68,
     populationDensity: 9226,
     establishedYear: 1803,
-    region: "Northern India"
+    region: "Northern India",
+    cuisine: ["Awadhi", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 29,
@@ -399,7 +515,11 @@ export const citiesData: City[] = [
     literacyRate: 80.21,
     populationDensity: 8182,
     establishedYear: 1612,
-    region: "Western India"
+    region: "Western India",
+    cuisine: ["Gujarati", "North Indian"],
+    languages: ["Gujarati", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 30,
@@ -412,7 +532,11 @@ export const citiesData: City[] = [
     literacyRate: 85.08,
     populationDensity: 9087,
     establishedYear: 1924,
-    region: "Western India"
+    region: "Western India",
+    cuisine: ["Maharashtrian", "North Indian"],
+    languages: ["Marathi", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 31,
@@ -425,7 +549,11 @@ export const citiesData: City[] = [
     literacyRate: 84.09,
     populationDensity: 3682,
     establishedYear: 1929,
-    region: "Western India"
+    region: "Western India",
+    cuisine: ["Maharashtrian", "North Indian"],
+    languages: ["Marathi", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 32,
@@ -438,7 +566,11 @@ export const citiesData: City[] = [
     literacyRate: 77.05,
     populationDensity: 781,
     establishedYear: 1194,
-    region: "Northern India"
+    region: "Northern India",
+    cuisine: ["Awadhi", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 33,
@@ -451,7 +583,11 @@ export const citiesData: City[] = [
     literacyRate: 70.50,
     populationDensity: 4015,
     establishedYear: 960,
-    region: "Northern India"
+    region: "Northern India",
+    cuisine: ["Kashmiri", "North Indian"],
+    languages: ["Urdu", "English"],
+    traditionalAttire: ["Pheran", "Saree"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 34,
@@ -464,7 +600,11 @@ export const citiesData: City[] = [
     literacyRate: 79.56,
     populationDensity: 8487,
     establishedYear: 1610,
-    region: "Central India"
+    region: "Central India",
+    cuisine: ["Maharashtrian", "North Indian"],
+    languages: ["Marathi", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 35,
@@ -477,7 +617,11 @@ export const citiesData: City[] = [
     literacyRate: 73.87,
     populationDensity: 972,
     establishedYear: 1965,
-    region: "Eastern India"
+    region: "Eastern India",
+    cuisine: ["Jharkhandi", "North Indian"],
+    languages: ["Bhojpuri", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 36,
@@ -490,7 +634,11 @@ export const citiesData: City[] = [
     literacyRate: 84.3,
     populationDensity: 3962,
     establishedYear: 1577,
-    region: "Northern India"
+    region: "Northern India",
+    cuisine: ["Punjabi", "North Indian"],
+    languages: ["Punjabi", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 37,
@@ -503,7 +651,11 @@ export const citiesData: City[] = [
     literacyRate: 90.36,
     populationDensity: 3254,
     establishedYear: 1971,
-    region: "Western India"
+    region: "Western India",
+    cuisine: ["Maharashtrian", "North Indian"],
+    languages: ["Marathi", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 38,
@@ -516,7 +668,11 @@ export const citiesData: City[] = [
     literacyRate: 72.32,
     populationDensity: 3048,
     establishedYear: 1583,
-    region: "Northern India"
+    region: "Northern India",
+    cuisine: ["Awadhi", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 39,
@@ -529,7 +685,11 @@ export const citiesData: City[] = [
     literacyRate: 87.68,
     populationDensity: 6134,
     establishedYear: 1818,
-    region: "Eastern India"
+    region: "Eastern India",
+    cuisine: ["Jharkhandi", "North Indian"],
+    languages: ["Bhojpuri", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 40,
@@ -542,7 +702,11 @@ export const citiesData: City[] = [
     literacyRate: 84.06,
     populationDensity: 731,
     establishedYear: 1396,
-    region: "Eastern India"
+    region: "Eastern India",
+    cuisine: ["Bengali", "Indian"],
+    languages: ["Bengali", "English"],
+    traditionalAttire: ["Saree", "Dhoti"],
+    famousPersonalities: ["Rabindranath Tagore", "Subhas Chandra Bose"]
   },
   {
     id: 41,
@@ -555,7 +719,11 @@ export const citiesData: City[] = [
     literacyRate: 81.07,
     populationDensity: 2876,
     establishedYear: 1947,
-    region: "Central India"
+    region: "Central India",
+    cuisine: ["Madhya Pradesh", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 42,
@@ -568,7 +736,11 @@ export const citiesData: City[] = [
     literacyRate: 77.36,
     populationDensity: 1352,
     establishedYear: 1558,
-    region: "Central India"
+    region: "Central India",
+    cuisine: ["Madhya Pradesh", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 43,
@@ -581,7 +753,11 @@ export const citiesData: City[] = [
     literacyRate: 82.59,
     populationDensity: 16945,
     establishedYear: 1020,
-    region: "Southern India"
+    region: "Southern India",
+    cuisine: ["Andhra Pradesh", "South Indian"],
+    languages: ["Telugu", "English"],
+    traditionalAttire: ["Dhoti", "Saree"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 44,
@@ -594,7 +770,11 @@ export const citiesData: City[] = [
     literacyRate: 80.56,
     populationDensity: 13148,
     establishedYear: 1459,
-    region: "Western India"
+    region: "Western India",
+    cuisine: ["Rajasthani", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 45,
@@ -607,7 +787,11 @@ export const citiesData: City[] = [
     literacyRate: 84.36,
     populationDensity: 6881,
     establishedYear: 300,
-    region: "Southern India"
+    region: "Southern India",
+    cuisine: ["South Indian", "Tamil"],
+    languages: ["Tamil", "English"],
+    traditionalAttire: ["Saree", "Dhoti"],
+    famousPersonalities: ["M.G. Ramachandran", "J. Jayalalithaa"]
   },
   {
     id: 46,
@@ -620,7 +804,11 @@ export const citiesData: City[] = [
     literacyRate: 84.14,
     populationDensity: 4469,
     establishedYear: 1402,
-    region: "Central India"
+    region: "Central India",
+    cuisine: ["Chhattisgarhi", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 47,
@@ -633,7 +821,11 @@ export const citiesData: City[] = [
     literacyRate: 76.56,
     populationDensity: 1901,
     establishedYear: 1264,
-    region: "Western India"
+    region: "Western India",
+    cuisine: ["Rajasthani", "North Indian"],
+    languages: ["Hindi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 48,
@@ -646,7 +838,11 @@ export const citiesData: City[] = [
     literacyRate: 86.77,
     populationDensity: 8432,
     establishedYear: 1966,
-    region: "Northern India"
+    region: "Northern India",
+    cuisine: ["Punjabi", "North Indian"],
+    languages: ["Punjabi", "English"],
+    traditionalAttire: ["Sherwani", "Saree"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   },
   {
     id: 49,
@@ -659,7 +855,11 @@ export const citiesData: City[] = [
     literacyRate: 91.47,
     populationDensity: 2919,
     establishedYear: 1681,
-    region: "North Eastern India"
+    region: "North Eastern India",
+    cuisine: ["Assamese", "Indian"],
+    languages: ["Assamese", "English"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Rabindranath Tagore", "Subhas Chandra Bose"]
   },
   {
     id: 50,
@@ -672,6 +872,10 @@ export const citiesData: City[] = [
     literacyRate: 77.08,
     populationDensity: 4841,
     establishedYear: 1853,
-    region: "Western India"
+    region: "Western India",
+    cuisine: ["Maharashtrian", "North Indian"],
+    languages: ["Marathi", "Hindi"],
+    traditionalAttire: ["Kurta-Pajama", "Sherwani"],
+    famousPersonalities: ["Shakti Singh", "Shakti Kapoor"]
   }
 ];
