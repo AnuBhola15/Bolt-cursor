@@ -146,9 +146,9 @@ const CityCard: React.FC<CityCardProps> = ({ city, onClick }) => {
 
         {/* City Specialties Section */}
         <div className="mt-4 space-y-3">
-          {/* Cuisine */}
+          {/* Special Dish */}
           <div>
-            <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Cuisine</p>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-400">Special Dish</p>
             <div className="flex flex-wrap gap-1 mt-1">
               {city.cuisine?.map((item, index) => (
                 <span key={index} className="px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full">
