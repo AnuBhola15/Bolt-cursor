@@ -31,7 +31,7 @@ export const citiesData: City[] = [
     establishedYear: 1507,
     region: "Western India",
     populationGrowth: 0.021, // 2.1% annual growth
-    cuisine: ["Maharashtrian", "Mumbai Style"],
+    cuisine: ["Vada Pav", "Pav Bhaji", "Bombay Duck"],
     languages: ["Marathi", "English"],
     traditionalAttire: ["Kurta-Pajama", "Saree"],
     famousPersonalities: ["Mahatma Gandhi", "Raj Kapoor"]
@@ -49,9 +49,9 @@ export const citiesData: City[] = [
     establishedYear: 1911,
     region: "Northern India",
     populationGrowth: 0.023, // 2.3% annual growth
-    cuisine: ["Delhi", "North Indian"],
+    cuisine: ["Butter Chicken", "Chole Bhature", "Paratha"],
     languages: ["Hindi", "English"],
-    traditionalAttire: ["Sherwani", "Saree"],
+    traditionalAttire: ["Kurta-Pajama", "Saree"],
     famousPersonalities: ["Indira Gandhi", "Amitabh Bachchan"]
   },
   {
@@ -67,7 +67,7 @@ export const citiesData: City[] = [
     establishedYear: 1537,
     region: "Southern India",
     populationGrowth: 0.028, // 2.8% annual growth
-    cuisine: ["South Indian", "Bengali"],
+    cuisine: ["Bisi Bele Bath", "Masala Dosa", "Ragi Mudde"],
     languages: ["Kannada", "English"],
     traditionalAttire: ["Dhoti", "Saree"],
     famousPersonalities: ["M.S. Subbulakshmi", "R.K. Narayan"]
@@ -85,7 +85,7 @@ export const citiesData: City[] = [
     establishedYear: 1690,
     region: "Eastern India",
     populationGrowth: 0.015, // 1.5% annual growth
-    cuisine: ["Bengali", "Indian"],
+    cuisine: ["Rosogolla", "Macher Jhol", "Mishti Doi"],
     languages: ["Bengali", "English"],
     traditionalAttire: ["Saree", "Dhoti"],
     famousPersonalities: ["Rabindranath Tagore", "Subhas Chandra Bose"]
@@ -103,9 +103,9 @@ export const citiesData: City[] = [
     establishedYear: 1639,
     region: "Southern India",
     populationGrowth: 0.019, // 1.9% annual growth
-    cuisine: ["South Indian", "Tamil"],
+    cuisine: ["Idli Sambar", "Chettinad Chicken", "Pongal"],
     languages: ["Tamil", "English"],
-    traditionalAttire: ["Saree", "Dhoti"],
+    traditionalAttire: ["Veshti", "Madisar Saree"],
     famousPersonalities: ["M.G. Ramachandran", "J. Jayalalithaa"]
   },
   {
@@ -121,9 +121,9 @@ export const citiesData: City[] = [
     establishedYear: 1591,
     region: "Southern India",
     populationGrowth: 0.024, // 2.4% annual growth
-    cuisine: ["Hyderabadi", "South Indian"],
+    cuisine: ["Hyderabadi Biryani", "Haleem", "Mirchi Ka Salan"],
     languages: ["Telugu", "English"],
-    traditionalAttire: ["Peshwai", "Saree"],
+    traditionalAttire: ["Hyderabadi Sherwani", "Pochampally Saree"],
     famousPersonalities: ["N.T. Rama Rao", "M.F. Husain"]
   },
   {
@@ -139,7 +139,7 @@ export const citiesData: City[] = [
     establishedYear: 1818,
     region: "Western India",
     populationGrowth: 0.026, // 2.6% annual growth
-    cuisine: ["Maharashtrian", "Punjabi"],
+    cuisine: ["Misal Pav", "Pithla Bhakri", "Puran Poli"],
     languages: ["Marathi", "Hindi"],
     traditionalAttire: ["Kurta-Pajama", "Sherwani"],
     famousPersonalities: ["Bal Gangadhar Tilak", "Shivaji Maharaj"]
@@ -157,9 +157,9 @@ export const citiesData: City[] = [
     establishedYear: 1411,
     region: "Western India",
     populationGrowth: 0.022, // 2.2% annual growth
-    cuisine: ["Gujarati", "North Indian"],
+    cuisine: ["Dhokla", "Khandvi", "Fafda"],
     languages: ["Gujarati", "Hindi"],
-    traditionalAttire: ["Sherwani", "Saree"],
+    traditionalAttire: ["Kediyu", "Chaniya Choli"],
     famousPersonalities: ["Vallabhbhai Patel", "Mahatma Gandhi"]
   },
   {
@@ -193,9 +193,9 @@ export const citiesData: City[] = [
     establishedYear: 1727,
     region: "Northern India",
     populationGrowth: 0.020, // 2.0% annual growth
-    cuisine: ["Rajasthani", "North Indian"],
+    cuisine: ["Dal Baati Churma", "Laal Maas", "Ghewar"],
     languages: ["Hindi", "English"],
-    traditionalAttire: ["Sherwani", "Saree"],
+    traditionalAttire: ["Angarkha", "Bandhani Saree"],
     famousPersonalities: ["Maharaja Sawai Man Singh II", "Rajmata Gayatri Devi"]
   },
   {
@@ -227,9 +227,9 @@ export const citiesData: City[] = [
     populationDensity: 4462,
     establishedYear: 1350,
     region: "Northern India",
-    cuisine: ["Awadhi", "North Indian"],
+    cuisine: ["Tunday Kababi", "Lucknowi Biryani", "Kakori Kebab"],
     languages: ["Hindi", "English"],
-    traditionalAttire: ["Sherwani", "Saree"],
+    traditionalAttire: ["Sherwani", "Chikankari Saree"],
     famousPersonalities: ["Khalil-ur-Rahman", "A.R. Rahman"]
   },
   {
